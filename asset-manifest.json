@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/grader/static/css/main.2a137a6c.chunk.css",
+    "main.js": "/grader/static/js/main.e062e015.chunk.js",
+    "main.js.map": "/grader/static/js/main.e062e015.chunk.js.map",
+    "runtime-main.js": "/grader/static/js/runtime-main.975e8a9f.js",
+    "runtime-main.js.map": "/grader/static/js/runtime-main.975e8a9f.js.map",
+    "static/js/2.02eefae7.chunk.js": "/grader/static/js/2.02eefae7.chunk.js",
+    "static/js/2.02eefae7.chunk.js.map": "/grader/static/js/2.02eefae7.chunk.js.map",
+    "index.html": "/grader/index.html",
+    "static/css/main.2a137a6c.chunk.css.map": "/grader/static/css/main.2a137a6c.chunk.css.map",
+    "static/js/2.02eefae7.chunk.js.LICENSE.txt": "/grader/static/js/2.02eefae7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.975e8a9f.js",
+    "static/js/2.02eefae7.chunk.js",
+    "static/css/main.2a137a6c.chunk.css",
+    "static/js/main.e062e015.chunk.js"
+  ]
+}
