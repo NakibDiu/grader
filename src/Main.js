@@ -18,7 +18,7 @@ const Main = () => {
             <div className = "main">
                 <div className= "container">
                     <form className = "form1">
-                        <label className= "label">Number of Courses : </label>
+                        <label className= "label">Number of Course : </label>
                         <input type = "number" className = "input" min = "1" max = "10" placeholder = "0" />
                         
                     </form>
