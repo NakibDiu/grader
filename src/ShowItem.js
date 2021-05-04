@@ -33,6 +33,8 @@ const ShowItem = (props) => {
             return 0
         })
         getResult(carr, garr)
+        setArray(carr)
+        setArrayG(garr)
     }
     
     var getResult = (carr, garr) => {
@@ -48,6 +50,9 @@ const ShowItem = (props) => {
         setResult(grade)
     }
     const [result , setResult] = useState(0)
+    const [array, setArray] = useState([])
+    const [arrayG, setArrayG] = useState([])
+
     return(
         <div className = "main2">
             <table border = "2" className = "table">
@@ -61,7 +66,7 @@ const ShowItem = (props) => {
             <div className= "buttonContainer">
                 <button className = "btn" style = {style} onClick = {getInputs}>See Your Grade</button>
             </div>
-            <Result grade = {result}/>        
+            <Result grade = {result} credits = {array} grades = {arrayG}/>        
         </div>
     )
 }

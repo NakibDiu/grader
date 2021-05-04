@@ -8,6 +8,20 @@ const Result = (props) => {
     if(props.grade <= 0) {
         style.display = "none"
     }
+    const grades = props.grades
+    const credits = props.credits
+    grades.map((i) => {
+        if(i === "") {
+            style.display = "none"
+        }
+        return 0
+    })
+    credits.map((i) => {
+        if(i === "") {
+            style.display = "none"
+        }
+        return 0
+    })
     return(
         <>
             <div style = {style} className = "resultContainer">
