@@ -14,14 +14,24 @@ const ShowItem = (props) => {
         let credits = document.getElementsByClassName("creditInput")
         let credArray = Array.from(credits)
         let carr = []
-        credArray.map((i) => carr.push(i.value))
-        
-        
+        credArray.map((i) => {
+            carr.push(i.value)
+            if(i.value === ""){
+                alert("Some Credits Are Missing 😛😛")
+            }
+            return 0
+        })
         let grades = document.getElementsByClassName
         ("gradeInput")
         let gradeArray = Array.from(grades)
         let garr = []
-        gradeArray.map((i) => garr.push(i.value))
+        gradeArray.map((i) => {
+            garr.push(i.value)
+            if(i.value === ""){
+                alert("Some Grades Are Missing 😛😛")
+            }
+            return 0
+        })
         getResult(carr, garr)
     }
     
@@ -34,8 +44,6 @@ const ShowItem = (props) => {
             mul = parseInt(carr[i]) * parseFloat(garr[i])
             sumOfTwo += mul
         }
-        console.log(sumOfTwo)
-        console.log(sumOfC)
         var grade = sumOfTwo / sumOfC
         setResult(grade)
     }

@@ -3,12 +3,22 @@ import React from 'react'
 const Tbody = (props) => {
         const rowLimit = props.listItem
         const handleCredit= (e) => {
-            // let credit = e.target.value
-            // console.log("Credit:" + credit)
+            if(e.target.value > 4.0) {
+                alert("Credit Can't Be Greater Than 4.0 😋😋")
+                e.target.value = ""
+            } else if(e.target.value <= 0) {
+                alert("Credit Must Be Greater Than 0 😋😋")
+                e.target.value = ""
+            }
         }
         const handleGrade= (e) => {
-            // let grade = e.target.value
-            // console.log("Grade" + grade)
+            if(e.target.value > 4.0) {
+                alert("Grade Can't Be Greater Than 4.0 😋😋")
+                e.target.value = ""
+            } else if(e.target.value <= 0) {
+                alert("Grade Must Be Greater Than 0 😋😋")
+                e.target.value = ""
+            }
         }
         return(
             <>
